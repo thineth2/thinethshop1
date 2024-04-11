@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .welcome-container {
+            text-align: center;
+            animation: slideIn 5s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome!</h1>
+        <p>welcome to thineth & ali online shop</p>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = 'http://127.0.0.1:5500/index2.html';
+        }, 6000); // 10000 milliseconds = 10 seconds (animation duration)
+    </script>
+</body>
+</html>
+
+
